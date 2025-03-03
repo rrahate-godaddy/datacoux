@@ -51,8 +51,11 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
+      - name: Initialize repository
+        run: git init
+
       - name: Ensure repository URL is set
-        run: git remote set-url origin https://github.com/rrahate-godaddy/datacoux.git
+        run: git remote add origin https://github.com/rrahate-godaddy/datacoux.git
 
       - name: Deploy to GitHub Pages
         id: deployment
