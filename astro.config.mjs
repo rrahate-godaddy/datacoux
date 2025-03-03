@@ -5,7 +5,7 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://rrahate-godaddy.github.io',
+  site: 'https://rrahate-godaddy.github.io/datacoux',
   base: '/datacoux',
   integrations: [react()],
   vite: {
