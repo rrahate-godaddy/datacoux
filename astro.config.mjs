@@ -7,6 +7,7 @@ import react from '@astrojs/react';
 export default defineConfig({
   site: 'https://rrahate-godaddy.github.io/datacoux',
   base: '/datacoux',
+  outDir: 'dist',
   integrations: [react()],
   vite: {
     plugins: [tailwindcss()],
