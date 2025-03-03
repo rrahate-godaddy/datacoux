@@ -51,6 +51,9 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
+      - name: Ensure repository URL is set
+        run: git remote set-url origin https://github.com/rrahate-godaddy/datacoux.git
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: peaceiris/actions-gh-pages@v3
