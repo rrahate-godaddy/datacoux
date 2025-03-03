@@ -214,7 +214,7 @@ export default function SetupTasks(props) {
                                 <div className="text-[10px] font-normal opacity-60">Custom red swoosh</div>
                                 <div className="flex flex-row justify-start mt-2 gap-2">
                                     <div className="badge badge-outline badge-primary">$129</div>
-                                    <div className="badge badge-dash badge-info">Qty: 5000</div>
+                                    <div className="badge badge-dash badge-info">Qty: 500</div>
                                 </div>
                             </div>
                         </li>
