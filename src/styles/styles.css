@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+   themes: light --default
+ }
+
+ html, body {
+   @apply bg-base-300 text-base-content;
+   height: 100%;
+   overflow: scroll;
+   
+ }
+
+
+.material-symbols-filled {
+  font-variation-settings: 'FILL' 1;
+  border: 0;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.1); /* Adjust the alpha value as needed */
+  filter: blur(0.1px); /* Adjust the blur radius as needed */
+}

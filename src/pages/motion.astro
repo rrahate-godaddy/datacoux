@@ -1,7 +1,7 @@
 ---
-import Welcome from '../components/Welcome.astro';
+
 import Layout from '../layouts/Layout.astro';
-import Main from '../components/idea';
+import Motion from '../components/motion';
 import "../styles/styles.css"
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -9,5 +9,5 @@ import "../styles/styles.css"
 ---
 
 <Layout>
-	<Main client:only="react" />
+	<Motion client:only="react" />
 </Layout>
