@@ -156,7 +156,7 @@ export default function SetupTasks(props) {
                             </span>
                             
                             <div className="list-col-grow">
-                                <div className="text-2xl">T-Shirt</div>
+                                <div className="text-xl">T-Shirt</div>
                                 <div className="text-[10px] font-normal opacity-60">Shellington Collection XRS</div>
                                 <div className="flex flex-row justify-start mt-2 gap-2">
                                     <div className="badge badge-outline badge-primary">$50</div>
@@ -174,7 +174,7 @@ export default function SetupTasks(props) {
                             </span>
                             
                             <div className="list-col-grow">
-                                <div className="text-2xl">Coffee Mug</div>
+                                <div className="text-xl">Coffee Mug</div>
                                 <div className="text-[10px] font-normal opacity-60">Shellington Collection XRS</div>
                                 <div className="flex flex-row justify-start mt-2 gap-2">
                                     <div className="badge badge-outline badge-primary">$35</div>
@@ -192,7 +192,7 @@ export default function SetupTasks(props) {
                             </span>
                             
                             <div className="list-col-grow">
-                                <div className="text-2xl">Luxury Watch</div>
+                                <div className="text-xl">Custom Motion Watch</div>
                                 <div className="text-[10px] font-normal opacity-60">Custom Seiko Diver</div>
                                 <div className="flex flex-row justify-start mt-2 gap-2">
                                     <div className="badge badge-outline badge-primary">$199</div>
@@ -210,7 +210,7 @@ export default function SetupTasks(props) {
                             </span>
                             
                             <div className="list-col-grow">
-                                <div className="text-2xl">Nike Waffle</div>
+                                <div className="text-xl">Nike Waffle</div>
                                 <div className="text-[10px] font-normal opacity-60">Custom red swoosh</div>
                                 <div className="flex flex-row justify-start mt-2 gap-2">
                                     <div className="badge badge-outline badge-primary">$129</div>
@@ -220,27 +220,41 @@ export default function SetupTasks(props) {
                         </li>
 
                         <li className="list-row">
-                            <div className="text-4xl font-thin opacity-30 tabular-nums">WE</div>
+                            
+                            <span className="material-symbols-outlined !text-[50px] material-symbols-filled text-fuchsia-400 outline-0">
+                            
+                                headphones
+                            
+                            </span>
+                            
                             <div className="list-col-grow">
-                                <div>Performance</div>
-                                <div className="text-[10px] uppercase font-semibold opacity-30">Facebook: Review campaign performance</div>
+                                <div className="text-xl">Ibanez Super Headphones</div>
+                                <div className="text-[10px] font-normal opacity-60">Whammy sound effects</div>
+                                <div className="flex flex-row justify-start mt-2 gap-2">
+                                    <div className="badge badge-outline badge-primary">$429</div>
+                                    <div className="badge badge-dash badge-info">Qty: 300</div>
+                                </div>
                             </div>
                         </li>
 
                         <li className="list-row">
-                            <div className="text-4xl font-thin opacity-30 tabular-nums">TH</div>
+                            
+                            <span className="material-symbols-outlined !text-[50px] material-symbols-filled text-gray-900 outline-0">
+                            
+                                Album
+                            
+                            </span>
+                            
                             <div className="list-col-grow">
-                                <div>Publish shop interview video</div>
-                                <div className="text-[10px] uppercase font-semibold opacity-30">Scheduled: Youtube release 1pm cst</div>
+                                <div className="text-xl">Metalocalypse Record</div>
+                                <div className="text-[10px] font-normal opacity-60">Coffee Edition</div>
+                                <div className="flex flex-row justify-start mt-2 gap-2">
+                                    <div className="badge badge-outline badge-primary">$12.99</div>
+                                    <div className="badge badge-dash badge-info">Qty: 15000</div>
+                                </div>
                             </div>
                         </li>
-                        <li className="list-row">
-                            <div className="text-4xl font-thin opacity-30 tabular-nums">TH</div>
-                            <div className="list-col-grow">
-                                <div>Review video engagement</div>
-                                <div className="text-[10px] uppercase font-semibold opacity-30">Video Engagement</div>
-                            </div>
-                        </li>
+                       
                        
 
 

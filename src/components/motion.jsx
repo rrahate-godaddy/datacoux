@@ -66,11 +66,11 @@ export default function Motion() {
                 transition={{ duration: 0.5 }}
             >   
 
-                <motion.div className={`card shadow-sm min-h-30
+                <motion.div className={`card  min-h-30
                     
-                    ${currentUser == 1 ? "hidden" : "col-span-3 row-span-3 h-full"}
+                    ${currentUser == 1 ? "hidden" : currentUser == 2 ? "shadow-sm col-span-3 row-span-3 h-full": "col-span-3 row-span-3 h-full" }
 
-                `} layout><PostsCarousel /></motion.div>
+                `} layout><PostsCarousel currentUser={currentUser} /></motion.div>
                 
                 <motion.div className={`card bg-base-100 card-md shadow-sm min-h-30
                     
@@ -118,12 +118,12 @@ export default function Motion() {
                 </motion.div>
           
                 <motion.div className={`card bg-base-100 card-md shadow-sm w-full h-full p-4 flex items-start justify-between 
-                                        ${currentUser == 3 && "hidden"}
+                                        
                     `} layout>
                     
                         <div className={`text-lg font-bold mb-2 w-full pt-2 
-                            ${currentUser == 2 ? 'text-center' : 'text-left'}`}>Find a new domain</div>
-                        {currentUser == 2 &&
+                            ${currentUser != 1 ?  'text-left' : 'text-center'}`}>Find a new domain</div>
+                        {currentUser != 1 && 
                             <div className="w-full h-auto my-4">
                                 <img src={DomainSearch.src} className="w-full h-grow max-h-24 object-contain" />
                             </div>
@@ -181,7 +181,7 @@ export default function Motion() {
 
                         ${currentUser == 1 ? "col-span-2" : null}
                         ${currentUser == 2 ? "h-full min-h-30 " : null}
-                        ${currentUser == 3 ? "col-span-3" : null}
+                        ${currentUser == 3 ? "col-span-2" : null}
 
                 `} layout>
                 
@@ -222,8 +222,8 @@ export default function Motion() {
                     <div className="flex flex-row justify-start items-center p-6 gap-4 h-full">
                         <img src="https://s.zkcdn.net/Advertisers/94be780907a246448e648415a3dd24ef.png" className="w-auto h-26 mr-4" />
                         <div>
-                            <h2 className="text-2xl mb-4">Selling in person? Get free Point of Sale device</h2>
-                            <p className="text-sm text-gray-400">
+                            <h2 className="text-xl mb-4">Selling in person?<br/>Get free Point of Sale device</h2>
+                            <p className="text-xs text-gray-400">
                             Modernize your in-person sales with an all-in-one GoDaddy Smart Terminal POS device available to you for free! Terms apply.
                             </p>
                             <button className="btn btn-outline btn-accent mt-4">Learn more</button>
