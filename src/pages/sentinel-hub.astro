@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro';
+import "../styles/styles.css"
+import ControlBar from '../components/molecules/sentinel-hub/control-bar.jsx'
+import HubModal from '../components/molecules/sentinel-hub/hub-modal.jsx'
+---
+
+<Layout>
+    
+    
+    <HubModal client:only="react" />
+</Layout>
