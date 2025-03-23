@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import ControlBar from "./control-bar"
 import { motion, animate, stagger } from "motion/react"
+import "../../../styles/styles.css"
 
 export default function HubModal(){
 

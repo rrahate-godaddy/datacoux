@@ -1,5 +1,8 @@
 import { motion } from "motion/react"
 import { useEffect, useState } from "react";
+import "../../../styles/styles.css"
+
+
 export default function ControlBar(props){
 
     useEffect(() => {
