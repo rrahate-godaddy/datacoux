@@ -17,3 +17,44 @@
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.1); /* Adjust the alpha value as needed */
   filter: blur(0.1px); /* Adjust the blur radius as needed */
 }
+
+
+.gradient-box {
+  
+  display: flex;
+  align-items: center;
+  
+  
+  margin: auto;
+
+
+  position: relative;
+
+  box-sizing: border-box;
+
+  border: 5px;
+  color: #FFF;
+  background: #000;
+  background-clip: padding-box; /* !importanté */
+  border: solid 5px transparent; /* !importanté */
+  border-radius: 1em;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+    margin: -5px; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background: linear-gradient(to right, red, orange);
+  }
+}
+
+.modal-bg {
+
+  background: #fff;
+  background:
+  linear-gradient(125deg, rgba(211,193,247,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 40%) left / calc(50% + 1px) 100% no-repeat,
+  linear-gradient(50deg, rgba(255,255,255,1) 65%, rgba(211,193,247,1) 100%, rgba(211,193,247,1) 100%) right / 50% 100% no-repeat;
+  
+}

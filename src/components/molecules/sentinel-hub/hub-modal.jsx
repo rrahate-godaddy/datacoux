@@ -31,7 +31,7 @@ export default function HubModal(){
             </div>
             {modalOpen && 
                 <dialog className="modal modal-open" id="my_modal_3">
-                    <div className="modal-box w-11/12 h-11/12 max-h-11/12 max-w-5xl bg-linear-45 from-[#D3C1F7]/25 via-[#fff] to-[#D3C1F7]/30 relative p-0">
+                    <div className="modal-box w-11/12 h-11/12 max-h-11/12 max-w-5xl bg-linear-45 from-[#D3C1F7]/25 via-[#fff] to-[#D3C1F7]/30 relative p-0 overflow-hidden">
                         <form method="dialog" >
                             <div className="flex flex-row justify-end items-center fixed p-2 w-full">
                                 
@@ -74,7 +74,7 @@ export default function HubModal(){
                         }
                         
                         {panels == 1 &&
-                            <motion.div className="grid grid-flow-row grid-cols-2 gap-8 p-10 mb-0"
+                            <motion.div className="grid grid-flow-row grid-cols-2 gap-8 p-10 mb-0 !overflow-hidden"
                                 initial={{ opacity: 0}}
                                 animate={{ opacity: 1}}
                                 transition={{
@@ -85,19 +85,13 @@ export default function HubModal(){
                             
                             layout >
                                 <div className="h-4/4 rounded-md [height:calc(100vh-180px)]"></div>
-                                <div className="bg-blue-200 rounded-md  [height:calc(100vh-135px)]"></div>
+                                <div className="bg-blue-200 rounded-md [height:calc(100vh-135px)]"></div>
                             </motion.div>
                         }
 
                         {panels == 2 &&
                             <motion.div className="flex flex-row gap-8 p-10 pb-0 mb-0" 
-                                initial={{ opacity: 0}}
-                                animate={{ opacity: 1}}
-                                transition={{
-                                    duration: 1,
-                                    ease: "easeInOut",
-                                    
-                                }}
+                                
                             layout>
                                 <div className="h-4/4 rounded-md w-[40%] [height:calc(100vh-180px)]"></div>
                                 <div className="bg-blue-200 rounded-md w-[70%] [height:calc(100vh-135px)]"></div>
